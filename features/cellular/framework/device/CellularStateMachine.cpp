@@ -313,6 +313,7 @@ bool CellularStateMachine::is_registered_to_plmn()
                     names_list.delete_all();
                     return false;
                 }
+                op_names = op_names->next;
             }
         }
         names_list.delete_all();
